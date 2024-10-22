@@ -52,3 +52,6 @@ if(isset($_SESSION['perfil']));
 </body>
  
 </html>
+<?php else: ?>
+    <p>Erro: Você não tem permissão para visualizar essa página</p>
+    <?php endif; ?>
