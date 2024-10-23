@@ -9,7 +9,7 @@ class Database{
         // Verifica se a instância de conexão ainda não foi criada
         if(!self::$instance){
             $host       = 'localhost';
-            $db         = 'sistema_usuarios_3c';
+            $db         = 'sistema_usuarios';
             $user       = 'root';
             $password   = '';
             // A conexão usa o driver Mysql (mysql:) e as informações de host e DB
