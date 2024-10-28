@@ -10,7 +10,6 @@ if(isset($_SESSION['perfil'])):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Usuários</title>
-    <link rel="stylesheet" type='text/css' media='screen' href="css/list.css"> 
     <style>
        body {
     background-color: #FDDDE6;
