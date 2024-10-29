@@ -75,7 +75,20 @@ Função: Chama o método login da classe AuthController, responsável por lidar
 - ``Login``
 
   Ao realizar seu cadastro o sistema dá baixa nos dados informados dentro do banco de dados, tornando possível o acesso do usuário pela página de login, após o mesmo inserir seus dados novamente.
-  
+
+- ``Consulta de Usuários``
+
+Os usuários cadastrados como Administradores ou Gestores podem acessar todas as contas logadas dentro do sistema, sendo que apenas administradores pode fazer alguma edição nos dados do usuário.
+
+![img](imgs/tela-lista.png)
+
+- ``Identificação do usuário``
+
+Dentro de dashboard, uma mensagem é mostrada ao usuário que pode ser Colaborador, Coordenador ou Administrador. Para mostrar tal mensagem, o sistema realiza uma consulta no banco de dados para resgatar qual tipo esse user é e quais as suas permissões.
+
+![img](imgs/tela-dashboard.png)
+
+
 ## Tecnologias utilizadas
 
 ``CSS 3`` ``HTML 5`` ``VSCODE``
