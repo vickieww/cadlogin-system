@@ -30,7 +30,8 @@ switch($action){
         $userController->list();
         break;
     case 'edit':
-        
+        $id =  $_GET['id'];
+        $userController->edit($id);
     default:
         $authController->login();
         break;
