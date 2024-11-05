@@ -88,6 +88,10 @@ Dentro de dashboard, uma mensagem é mostrada ao usuário que pode ser Colaborad
 
 ![img](imgs/tela-dashboard.png)
 
+## Demonstração
+
+![gif](imgs/tel-systemcadlog.gif)
+
 
 ## Tecnologias utilizadas
 
