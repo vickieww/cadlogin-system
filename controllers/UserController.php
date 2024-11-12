@@ -47,6 +47,11 @@ class UserController
         }
     }
 
+    public function delete($id){
+        user::delete($id);
+        header('location: index.php?action=list');
+    }
+
 }
 
 ?>
