@@ -137,7 +137,6 @@ a:hover {
                         <!-- Insere botão de exclusão apenas para perfil admin -->
                         <?php if($_SESSION['perfil'] == 'admin'): ?>
                             <a class="ex" href="index.php?action=delete&id">Excluir</a>
-                            <a href="index.php?edit&id=<?= $user['id']?>">Editar</a>
                         <?php endif; ?>
                     </td>
                 </tr>

@@ -39,10 +39,11 @@ class User
         $data['data'] = $id;
         $stmt->execute($data);
     }
-}
+
 public static function delete($id){
     $conn = Database::getConnection();
     $stmt = $conn->prepare("DELETE FROM usuarios WHERE id = :id");
     $stmt->execute(['id' => $id]);
+}
 }
 ?>
