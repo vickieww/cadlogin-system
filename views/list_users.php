@@ -131,13 +131,12 @@ a:hover {
                     <td><?= $user['perfil'] ?></td>
                     <td>
                         <?php if($_SESSION['perfil'] == 'admin' || $_SESSION['perfil'] == 'gestor'): ?>
-                            <a href="">Editar</a>
+                            <a href="index.php?action=edit&id=">Editar</a>
                         <?php endif; ?>
 
                         <!-- Insere botão de exclusão apenas para perfil admin -->
                         <?php if($_SESSION['perfil'] == 'admin'): ?>
                             <a href="">Excluir</a>
-                            <a href="index.php?edit&id=<?= $user['id']?>">Editar</a>
                         <?php endif; ?>
                     </td>
                 </tr>
