@@ -34,16 +34,9 @@ class User
         $conn = Database::getConnection();
 
         // Prepara a consulta SQL para atualizar os dados do usuário
-        $stmt=$conn->prepare('UPDATE usuarios SET nome = :nome, email = :email, perfil = :perfil WHERE id = :id');
+        $stmt = $conn->prepare('UPDATE usuarios SET nome = :nome, email = :email, perfil = :perfil WHERE id = :id');
 
         $data['data'] = $id;
         $stmt->execute($data);
     }
-    
-    public static function delete($id){
-        $conn = Database::getConnection();
-        $stmt = $conn->prepare("DELETE FROM usuarios WHERE id = :id");
-        $stmt->execute(['id' => $id]);
-    }
 }
-?>
